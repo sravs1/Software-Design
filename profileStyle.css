@@ -24,15 +24,15 @@ body{
 	font-weight: bold;
 	color: #130f40;
 }
-.login_form{
+.profile_form{
 	padding: 20px 40px;
 }
-.login_form .font{
+.profile_form .font{
 	font-size: 18px;
 	color: #130f40;
 	margin: 5px 0;
 }
-.login_form input{
+.profile_form input{
 	height: 40px;
 	width: 350px;
 	padding: 0 5px;
@@ -40,10 +40,10 @@ body{
 	outline: none;
 	border: 1px solid silver;
 }
-.login_form .font2{
+.profile_form .font2{
 	margin-top: 30px;
 }
-.login_form button{
+.profile_form button{
 	margin: 45px 0 30px 0;
 	height: 45px;
 	width: 365px;
@@ -57,11 +57,11 @@ body{
 	border: 1px solid #3949AB;
 	transition: .5s;
 }
-.login_form button:hover{
+.profile_form button:hover{
 	background: #151c6a;
 }
-.login_form #email_error,
-.login_form #pass_error{
+.profile_form #fullname_error,
+.profile_form #address1_error{
 	margin-top: 5px;
 	width: 345px;
 	font-size: 18px;

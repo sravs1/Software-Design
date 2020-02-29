@@ -3,18 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Validated Login Form</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="profileStyle.css">
 </head>
 <body>
 	<div class="container">
-		<h1 class="label">Client</h1>
-		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
-			<div class="font">Username</div>
-			<input placeholder="Enter username" autocomplete="off" type="text" name="email" required>
-			<div id="email_error">Please fill up your or Phone</div>
-			<button type="submit" onclick="window.location.href='home.html'">Register</button>
+		<h1 class="label">Client Profile</h1>
+		<form class="profile_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Fullname</div>
+			<input autocomplete="off" type="text" name="fullname" required>
+			<div id="fullname_error">Please fill up your fullname</div>
+      <div class="font">Address1</div>
+			<input autocomplete="off" type="text" name="address1" required>
+			<div id="address1_error">Please fill up your Address</div>
+      <div class="font">Address2</div>
+			<input autocomplete="off" type="text" name="address2">
+      <div class="font">City</div>
+			<input autocomplete="off" type="text" name="city" required>
+			<div id="city_error">Enter your city</div>
+
+
+
+      <button type="submit">Login</button>
 		</form>
 	</div>
-	<script src="validProfile.js"></script>
+	<script src="init.js"></script>
 </body>
 </html>

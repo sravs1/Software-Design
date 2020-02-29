@@ -7,15 +7,15 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="label">User Login</h1>
-		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+		<h1 class="label">Signup</h1>
+		<form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
 			<div class="font">Email id</div>
-			<input placeholder="Enter email id" autocomplete="off" type="text" name="email" required>
-			<div id="email_error">Please fill up your Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email</div>
 			<div class="font font2">Password</div>
-			<input placeholder="Enter your password" type="password" name="password" required>
+			<input type="password" name="password">
 			<div id="pass_error">Please fill up your Password</div>
-			<button type="submit" onclick="window.location.href='index.html'">Register</button>
+      	<button type="submit">Register</button>
 		</form>
 	</div>
 	<script src="valid.js"></script>
