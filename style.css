@@ -60,7 +60,8 @@ body{
 .login_form button:hover{
 	background: #151c6a;
 }
-.login_form #email_error{
+.login_form #email_error,
+.login_form #pass_error{
 	margin-top: 5px;
 	width: 345px;
 	font-size: 18px;
@@ -72,3 +73,5 @@ body{
 	border: 1px solid #EF9A9A;
 	display: none;
 }
+
+
