@@ -4,10 +4,11 @@
 }
 body{
 	background: url(Gas_station.jpg) no-repeat;
-	background-size: 100% 140%;
+	background-size: cover;
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	flex-flow: row wrap;
 	font-family: sans-serif;
 }
 .container{
@@ -18,40 +19,35 @@ body{
 	background: black;
 	border-radius: 5px;
 }
-
 .label{
-	padding: 20px 110px;
+	padding: 20px 100px 0;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: verdana;
 	color: orangered;
 }
-.login_form{
+.quote_form{
 	padding: 20px 40px;
 }
-
-.login_form .font{
-	font-size: 18px;
+.quote_form .font{
+	font-size: 15px;
 	color: orangered;
-	margin: 5px 0;
+	margin: 5px 0 3px;
 }
-.login_form input{
+.quote_form input{
 	height: 30px;
 	width: 250px;
 	padding: 0 5px;
 	font-size: 18px;
 	outline: none;
+	margin: 2px 0 5px 0;
 	border: 1px solid silver;
 }
-.login_form .font2{
+.quote_form .font2{
 	margin-top: 20px;
 }
-.login_form .p{
-	color : orangered;
-	font-family: verdana;
-}
-.login_form button{
-	margin: 20px 0 0 0;
+.quote_form button{
+	margin: 35px 0 0 0;
 	height: 25px;
 	width: 265px;
 	font-size: 15px;
@@ -64,11 +60,11 @@ body{
 	border: 1px solid #3949AB;
 	transition: .5s;
 }
-.login_form button:hover{
+.quote_form button:hover{
 	background: darkgreen;
 }
-.login_form #email_error,
-.login_form #pass_error{
+.quote_form #gallons_error,
+.quote_form #date_error{
 	margin-top: 5px;
 	width: 200px;
 	font-size: 12px;

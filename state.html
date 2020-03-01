@@ -3,26 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Validated Login Form</title>
-	<link rel="stylesheet" href="profileStyle.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container">
-		<h1 class="label">Client Profile Registration</h1>
-		<form class="profile_form" action="home.html" method="post" name="form" onsubmit="return validated()">
-			<div class="font">Fullname</div>
-			<input autocomplete="off" type="text" name="fullname" >
-			<div id="fullname_error">Please fill up your fullname</div>
-      <div class="font">Address1</div>
-			<input autocomplete="off" type="text" name="address1" >
-			<div id="address1_error">Please fill up your Address</div>
-      <div class="font">Address2</div>
-			<input autocomplete="off" type="text" name="address2">
-      <div class="font">City</div>
-			<input autocomplete="off" type="text" name="city">
-			<div id="city_error">Enter your city</div>
-      <div class="font">State</div>
-			<select name="state">
-        <option value="none" selected disabled hidden >--select an option--</option>
+		<h1 class="label">Signup</h1>
+		<form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">State</div>
+			<select>
 				<option value="AL">Alabama (AL)</option>
 				<option value="AK">Alaska (AK)</option>
 				<option value="AZ">Arizona (AZ)</option>
@@ -73,30 +61,9 @@
 				<option value="WA">Washington</option>
 				<option value="WV">West Virginia</option>
 				<option value="WI">Wisconsin</option>
-				<option value="WY">Wyoming</option>
+				<option value="WY">Wyoming</option>			
 </select>
-<div id="state_error">Select your state</div>
-
-
-
-      <div class="font">Zipcode</div>
-      <input autocomplete="off" type="text" name="zipcode">
-      <div id="zipcode_error">Enter your zipcode</div>
-
-
-
-
-
-
-
-
-
-
-
-
-      <button type="submit">Login</button>
 		</form>
 	</div>
-	<script src="init.js"></script>
 </body>
 </html>
